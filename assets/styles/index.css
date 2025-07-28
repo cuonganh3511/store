@@ -40,14 +40,17 @@ main {
 	width: 80%;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	/* align-items: center; */
 	color: white;
 	background: #000;
 	margin: 40px 0 0 45px;
 
 	.title_main {
-		padding-left: 64px;
+		width: 38%;
+		padding: 58px 0 0 64px;
 		list-style: none;
+		display: flex;
+		flex-direction: column;
 
 		li {
 			padding-bottom: 20px;
