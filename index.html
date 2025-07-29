@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Store</title>
+    <!-- poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icon -->
+    <script
+      src="https://kit.fontawesome.com/d3822cd93a.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- css -->
+    <link rel="stylesheet" href="/assets/styles/main.css" />
+    <link rel="stylesheet" href="/assets/styles/index.css" />
+    <link rel="stylesheet" href="/assets/styles/detail.css">
+    <!-- layout header-footer -->
+    <script src="/assets/js/mockData.js"></script>
+    <script src="/assets/js/common.js"></script>
+    <script src="/assets/js/layout.js"></script>
+  </head>
+  <body>
+    <main class="wrapper">
+      <div class="container flex justify-between">
+        <div class="main_left">
+          <ul>
+            <li>
+              <div class="space">
+                <a href="">Woman’s Fashion</a>
+                <i class="fa-solid fa-angle-right"></i>
+              </div>
+            </li>
+            <li>
+              <div class="space">
+                <a href="">Men’s Fashion</a>
+                <i class="fa-solid fa-angle-right"></i>
+              </div>
+            </li>
+            <li><a href="">Electronics</a></li>
+            <li><a href="">Home & Lifestyle</a></li>
+            <li><a href="">Medicine</a></li>
+            <li><a href="">Sports & Outdoor</a></li>
+            <li><a href="">Baby’s & Toys</a></li>
+            <li><a href="">Groceries & Pets</a></li>
+            <li><a href="">Health & Beauty</a></li>
+          </ul>
+        </div>
+
+        <div class="main_right">
+          <ul class="title_main">
+            <li class="title_logo">
+              <div>
+                <img src="/assets/img/logo_apple.png" alt="" />
+              </div>
+              <div>
+                <span>iPhone 14 Series</span>
+              </div>
+            </li>
+
+            <li class="title_text">
+              <h1>Up to 10% off Voucher</h1>
+            </li>
+
+            <li class="title_link">
+              <a href="">Shop Now</a>
+              <i class="fa-solid fa-arrow-right"></i>
+            </li>
+          </ul>
+
+          <div class="main_img">
+            <img src="/assets/img/logo_main.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <section class="container products my-80">
+        <div class="products-header">
+          <div class="title">
+            <div class="first_text">
+              <span></span>
+              <span>Today’s</span>
+            </div>
+
+            <div class="second_text">
+              <h2>Flash Sales</h2>
+            </div>
+          </div>
+          <div class="other flex justify-between">
+            <div class="countdown">
+              <ul class="time" id="timer">
+                <li>
+                  <span>Days</span>
+                  <strong id="days">00 </strong>
+                </li>
+                <li>
+                  <span class="space">:</span>
+                </li>
+                <li>
+                  <span>Hours</span>
+                  <strong id="hours">00</strong>
+                </li>
+                <li>
+                  <span class="space">:</span>
+                </li>
+                <li>
+                  <span>Minutes</span>
+                  <strong id="minutes">00</strong>
+                </li>
+                <li>
+                  <span class="space">:</span>
+                </li>
+                <li>
+                  <span>Seconds</span>
+                  <strong id="seconds">00</strong>
+                </li>
+              </ul>
+            </div>
+
+            <div class="arrows">
+              <i class="fa-solid fa-arrow-left"></i>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+        <div class="products-main">
+          <div class="all_product all_product_flash_sale"></div>
+        </div>
+
+        <div class="btn-all_product">
+          <button>
+            <a href="/page/categories.html">View All Products</a>
+          </button>
+        </div>
+      </section>
+
+      <!-- === categorie === -->
+      <section class="container">
+        <div class="products-header">
+          <div class="title">
+            <div class="first_text">
+              <span></span>
+              <span>Categories</span>
+            </div>
+
+            <div class="second_text">
+              <h2>Browse By Category</h2>
+            </div>
+          </div>
+          <div class="other flex justify-end">
+            <div class="arrows">
+              <i class="fa-solid fa-arrow-left"></i>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="categorie-link">
+          <div class="categorie-content">
+            <div class="content">
+              <a href="">
+                <div class="img">
+                  <img
+                    class="black"
+                    src="/assets/icon/category/Category-CellPhone.svg"
+                    alt=""
+                  />
+                  <img
+                    class="white"
+                    src="/assets/icon/category/Category-CellPhon-white.svg"
+                    alt=""
+                  />
+                </div>
+              </a>
+              <span>Phones</span>
+            </div>
+          </div>
+          <div class="categorie-content">
+            <div class="content">
+              <a href="">
+                <div class="img">
+                  <img
+                    class="black"
+                    src="/assets/icon/category/Category-Computer.svg"
+                    alt=""
+                  />
+                  <img
+                    class="white"
+                    src="/assets/icon/category/Category-Computer-white.svg"
+                    alt=""
+                  />
+                </div>
+              </a>
+              <span>Computers</span>
+            </div>
+          </div>
+          <div class="categorie-content">
+            <div class="content">
+              <a href="">
+                <div class="img">
+                  <img
+                    class="black"
+                    src="/assets/icon/category/Category-SmartWatch.svg"
+                    alt=""
+                  />
+                  <img
+                    class="white"
+                    src="/assets/icon/category/Category-SmartWatch-white.svg"
+                    alt=""
+                  />
+                </div>
+              </a>
+              <span>SmartWatch</span>
+            </div>
+          </div>
+          <div class="categorie-content">
+            <div class="content">
+              <a href="">
+                <div class="img">
+                  <img
+                    class="black"
+                    src="/assets/icon/category/Category-Camera.svg"
+                    alt=""
+                  />
+                  <img
+                    class="white"
+                    src="/assets/icon/category/Category-Camera-white.svg"
+                    alt=""
+                  />
+                </div>
+              </a>
+              <span>Camera</span>
+            </div>
+          </div>
+          <div class="categorie-content">
+            <div class="content">
+              <a href="">
+                <div class="img">
+                  <img
+                    class="black"
+                    src="/assets/icon/category/Category-Headphone.svg"
+                    alt=""
+                  />
+                  <img
+                    class="white"
+                    src="/assets/icon/category/Category-Headphone-white.svg"
+                    alt=""
+                  />
+                </div>
+              </a>
+              <span>HeadPhones</span>
+            </div>
+          </div>
+          <div class="categorie-content">
+            <div class="content">
+              <a href="">
+                <div class="img">
+                  <img
+                    class="black"
+                    src="/assets/icon/category/Category-Gamepad.svg"
+                    alt=""
+                  />
+                  <img
+                    class="white"
+                    src="/assets/icon/category/Category-Gamepad-white.svg"
+                    alt=""
+                  />
+                </div>
+              </a>
+              <span>Gaming</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="line"></div>
+      </section>
+
+      <section class="container products my-80">
+        <div class="products-header">
+          <div class="title">
+            <div class="first_text">
+              <span></span>
+              <span>This Month</span>
+            </div>
+
+            <div class="second_text">
+              <h2>Best Selling Products</h2>
+            </div>
+          </div>
+          <div class="other flex justify-end">
+            <div class="arrows">
+              <i class="fa-solid fa-arrow-left"></i>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+        <div class="products-main">
+          <div class="all_product all_product_best_selling"></div>
+        </div>
+
+        <div class="btn-all_product">
+          <button>
+            <a href="/page/categories.html">View All Products</a>
+          </button>
+        </div>
+      </section>
+
+      <!-- ==== advertisement ==== -->
+      <section class="advertisement container">
+        <div class="adver-content">
+          <div class="adver-left">
+            <span class="adver-text">Categories</span>
+            <h1>Enhance Your Music Experience</h1>
+
+            <div class="timer">
+              <div class="items">
+                <strong>23</strong>
+                <span>Hours</span>
+              </div>
+              <div class="items">
+                <strong>05</strong>
+                <span>Days</span>
+              </div>
+              <div class="items">
+                <strong>59</strong>
+                <span>Minutes</span>
+              </div>
+              <div class="items">
+                <strong>35</strong>
+                <span>Seconds</span>
+              </div>
+            </div>
+
+            <button>Buy Now!</button>
+          </div>
+
+          <div class="adver-right">
+            <div class="image-adver">
+              <img
+                src="/assets/img/JBL_BOOMBOX_2_HERO_020_x1 (1) 1.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container products my-80">
+        <div class="products-header">
+          <div class="title">
+            <div class="first_text">
+              <span></span>
+              <span>Our Products</span>
+            </div>
+
+            <div class="second_text">
+              <h2>Explore Our Products</h2>
+            </div>
+          </div>
+          <div class="other flex justify-end">
+            <div class="arrows">
+              <i class="fa-solid fa-arrow-left"></i>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+        <div class="products-main">
+          <div class="all_product all_product_our_product"></div>
+        </div>
+
+        <div class="btn-all_product">
+          <button>
+            <a href="/page/categories.html">View All Products</a>
+          </button>
+        </div>
+      </section>
+
+      <!-- === featured === -->
+      <section class="container">
+        <div class="products-header">
+          <div class="title">
+            <div class="first_text">
+              <span></span>
+              <span>Featured</span>
+            </div>
+
+            <div class="second_text">
+              <h2>New Arrival</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="featured-items">
+          <div class="item">
+            <div class="image">
+              <img src="/assets/img/ps5.png" alt="" />
+            </div>
+            <div class="text">
+              <h3>PlayStation 5</h3>
+              <p>Black and White version of the PS5 coming out on sale.</p>
+              <span>
+                <a href="/page/categories.html"></a>
+              </span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="/assets/img/ps5.png" alt="" />
+            </div>
+            <div class="text">
+              <h3>PlayStation 5</h3>
+              <p>Black and White version of the PS5 coming out on sale.</p>
+              <span>
+                <a href="/page/categories.html"></a>
+              </span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="/assets/img/ps5.png" alt="" />
+            </div>
+            <div class="text">
+              <h3>PlayStation 5</h3>
+              <p>Black and White version of the PS5 coming out on sale.</p>
+              <span>
+                <a href="/page/categories.html"></a>
+              </span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="/assets/img/ps5.png" alt="" />
+            </div>
+            <div class="text">
+              <h3>PlayStation 5</h3>
+              <p>Black and White version of the PS5 coming out on sale.</p>
+              <span>
+                <a href="/page/categories.html"></a>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-bottom">
+          <div class="item-bot">
+            <div class="image">
+              <img src="/assets/icon/feature/carfast.svg" alt="" />
+            </div>
+            <h3>FREE AND FAST DELIVERY</h3>
+            <span>Free delivery for all orders over $140</span>
+          </div>
+
+          <div class="item-bot">
+            <div class="image">
+              <img src="/assets/icon/feature/headphone.svg" alt="" />
+            </div>
+            <h3>24/7 CUSTOMER SERVICE</h3>
+            <span>Friendly 24/7 customer support</span>
+          </div>
+
+          <div class="item-bot">
+            <div class="image">
+              <img src="/assets/icon/feature/secure.svg" alt="" />
+            </div>
+            <h3>MONEY BACK GUARANTEE</h3>
+            <span>We reurn money within 30 days</span>
+          </div>
+        </div>
+
+        <div class="feature-button">
+          <span class="button"><i class="fa-solid fa-arrow-up"></i></span>
+        </div>
+      </section>
+
+      <script src="/assets/js/flash_sale.js"></script>
+      <script src="/assets/js/bestSelling.js"></script>
+      <script src="/assets/js/ourProduct.js"></script>
+    </main>
+  </body>
+</html>

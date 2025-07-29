@@ -1,0 +1,288 @@
+:root {
+  --color-red: #db4444;
+  --color-red-hover: #e07575;
+  --color-green: #00ff66;
+  --color-green-hover: #a0bce0;
+  --color-bg: #000000;
+  --color-bg-input: #f5f5f5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+/* === .title-detail === */
+
+.title-detail {
+	display: flex;
+	gap: 10px;
+}
+
+.title-detail .link-list a {
+	color: #000000;
+	opacity: 0.5;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.title-detail .link-list .gamepad {
+	opacity: 1;
+}
+
+/* === detail-product === */
+
+.detail-product {
+	display: flex;
+}
+
+/* === detail-left === */
+.detail-product .detail-left {
+	width: 66%;
+	height: 600px;
+	margin-right: 70px;
+	display: grid;
+  	grid-template-areas:
+    "a a b b b"
+    "c c b b b"
+    "d d b b b"
+    "e e b b b";
+    column-gap: 30px;
+	row-gap: 16px;
+}
+
+img {
+	width: 100%;
+	object-fit: contain;
+}
+
+/* .image {
+	width: 100%;
+	height: 316px;
+} */
+
+.detail-product .detail-left .item-1 {
+	grid-area: a;
+}
+.detail-product .detail-left .item-2 {
+	grid-area: c;
+}
+.detail-product .detail-left .item-3 {
+	grid-area: d;
+}
+.detail-product .detail-left .item-4 {
+	grid-area: e;
+}
+.detail-product .detail-left .item-5 {
+	grid-area: b;
+	height: 600px;
+	display: grid;
+	place-items: center;
+}
+
+.detail-product .detail-left .item {
+	width: 100%;
+	height: 114px;
+
+}
+
+/* === detail-right === */
+.detail-product .detail-right {
+	width: 33%;
+}
+
+.detail-right .price-product .evaluate-product {
+	display: flex;
+	gap: 10px;
+	margin-top: 16px;
+
+}	
+
+.evaluate-product .evaluate {
+	color: #FFAD33;
+}
+
+.evaluate-product .number, .colum {
+	color: #000000;
+	opacity: 0.5;
+}
+
+.evaluate-product .text {
+	font-size: 14px;
+	color: var(--color-green)
+}
+
+.price-product .price {
+	font-size: 24px;
+	font-weight: 400;
+	margin-top: 16px; 
+}
+
+.price-product p {
+	font-size: 14px;
+	margin-top: 24px;
+}
+
+.detail-right .line {
+	margin: 24px 0;
+}
+
+/* === colors-product === */
+.colors-product {}
+
+.size-text {
+	font-size: 20px;
+	font-weight: 400;
+	margin-right: 20px;
+}
+
+.colors .btn-blue {
+	background: var(--color-green-hover);
+
+}
+
+.colors .btn-red {
+	background: var(--color-red-hover);
+} 
+
+.colors .border-btn {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: none;
+}
+
+/* === sizes-product === */
+.sizes-product {
+	margin-top: 24px;
+	display: flex;
+}
+
+.sizes-product ul {
+	display: inline-block;
+	display: flex;
+	gap: 16px;
+}
+
+.sizes-product ul li {
+	width: 32px;
+	height: 32px;
+	list-style: none;
+	border: 1px solid  gray;
+	text-align: center;
+	cursor: pointer;
+}
+
+.sizes-product ul li:hover {
+	background: var(--color-red);
+}
+
+.size {
+	line-height: 32px;
+	font-size: 14px;
+}
+
+
+/* === buy-product === */
+.buy-product {
+	margin-top: 24px;
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+
+.buy-product .select ul {
+	list-style: none;
+	display: flex;
+	
+}
+
+.select ul li {
+	width: 40px;
+	height: 40px;
+	border: 1px solid gray;
+	text-align: center;
+}
+
+.select ul .center {
+	line-height: 40px;
+}
+
+.select ul .number {
+	width: 80px;
+}
+
+.select ul button {
+	border: none;
+	background: none;
+}
+
+.select ul .change {
+	cursor: pointer;
+}
+
+.select ul .change:hover {
+	background: var(--color-red);
+}
+
+.buy-product .button button {
+	width: 164px;
+	height: 44px;
+	border: none;
+	border-radius: 4px;
+	background: var(--color-red);
+	color: white;
+	cursor: pointer;
+}
+
+.buy-product .icon {
+	width: 40px;
+	height: 40px;
+	border: 1px solid gray;
+}
+
+.buy-product .icon .heart {
+	width: 20px;
+	margin: 0 auto;
+	line-height: 40px;
+	background: none;
+}
+
+/* === ship-product === */
+
+.ship-product {
+	margin-top: 24px;
+	border: 1px solid gray;
+	border-radius: 4px;
+}
+
+.ship-product .ship,.return {
+	height: 90px;
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	padding-left: 16px;
+}
+
+.ship-product .icon {
+	width: 40px;
+}
+
+.ship-product .textes .title {
+	font-weight: 500;
+	display: block;
+	cursor: pointer;
+}
+
+.ship-product .textes .text {
+	font-size: 12px;
+	text-decoration: underline;
+}
+
+
+.ship-product .ship {
+	border-bottom: 1px solid gray;
+}
