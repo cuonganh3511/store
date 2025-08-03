@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <!-- poppins -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icon -->
+    <script
+      src="https://kit.fontawesome.com/d3822cd93a.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- link css -->
+    <link rel="stylesheet" href="/assets/styles/cart.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="/assets/styles/main.css" />
+    <!-- js -->
+    <script src="/assets/js/mockData.js"></script>
+    <script src="/assets/js/common.js"></script>
+    <script src="/assets/js/layout.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="wrapper my-80">
+        <div class="container">
+          <section class="header-cart my-80">
+            <span>
+              <a href="/index.html">Home</a>
+            </span>
+            <span>/</span>
+            <span>Cart</span>
+          </section>
+
+          <section class="main-cart">
+            <div class="content-main">
+              <div class="header-main">
+                <span>Product</span>
+                <span>Price</span>
+                <span>Quantity</span>
+                <span>Subtotal</span>
+              </div>
+              <div class="body-main">
+                <div class="product">
+                  <div class="image-product width-25">
+                    <span class="image"
+                      ><img src="/assets/img/Monitor-Cart-Small.png" alt=""
+                    /></span>
+                    <span class="name">LCD Monitor</span>
+                  </div>
+
+                  <div class="price-product width-25">
+                    <span>$650</span>
+                  </div>
+
+                  <div class="quantity-product width-25">
+                    <div class="border-quantity">
+                      <div class="number">
+                        <span>01</span>
+                      </div>
+                      <div class="icon">
+                        <img src="/assets/icon/Drop-Up-Small.svg" alt="" />
+                        <img src="/assets/icon/Drop-Down-Small.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="sub-product width-25">
+                    <span>$650</span>
+                  </div>
+                </div>
+
+                <div class="product">
+                  <div class="image-product width-25">
+                    <span class="image"
+                      ><img src="/assets/img/JBL_BOOMBOX_2_HERO_020_x1 (1) 1.png" alt=""
+                    /></span>
+                    <span class="name">LCD Monitor</span>
+                  </div>
+
+                  <div class="price-product width-25">
+                    <span>$1100</span>
+                  </div>
+
+                  <div class="quantity-product width-25">
+                    <div class="border-quantity">
+                      <div class="number">
+                        <span>01</span>
+                      </div>
+                      <div class="icon">
+                        <img src="/assets/icon/Drop-Up-Small.svg" alt="" />
+                        <img src="/assets/icon/Drop-Down-Small.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="sub-product width-25">
+                    <span>$1100</span>
+                  </div>
+                </div>
+
+                <div class="product">
+                  <div class="image-product width-25">
+                    <span class="image"
+                      ><img src="/assets/img/ps5.png" alt=""
+                    /></span>
+                    <span class="name">PS5</span>
+                  </div>
+
+                  <div class="price-product width-25">
+                    <span>$2000</span>
+                  </div>
+
+                  <div class="quantity-product width-25">
+                    <div class="border-quantity">
+                      <div class="number">
+                        <span>01</span>
+                      </div>
+                      <div class="icon">
+                        <img src="/assets/icon/Drop-Up-Small.svg" alt="" />
+                        <img src="/assets/icon/Drop-Down-Small.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="sub-product width-25">
+                    <span>$2000</span>
+                  </div>
+                </div>
+
+                <div class="product">
+                  <div class="image-product width-25">
+                    <span class="image"
+                      ><img src="/assets/img/perfum.png" alt=""
+                    /></span>
+                    <span class="name">Perfum</span>
+                  </div>
+
+                  <div class="price-product width-25">
+                    <span>$1200</span>
+                  </div>
+
+                  <div class="quantity-product width-25">
+                    <div class="border-quantity">
+                      <div class="number">
+                        <span>01</span>
+                      </div>
+                      <div class="icon">
+                        <img src="/assets/icon/Drop-Up-Small.svg" alt="" />
+                        <img src="/assets/icon/Drop-Down-Small.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="sub-product width-25">
+                    <span>$1200</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="btn-main">
+              <div class="return">
+                <button>Return To Shop</button>
+              </div>
+              <div class="update">
+                <button>Update Cart</button>
+              </div>
+            </div>
+
+          </section>
+
+          <section class="footer-cart my-80">
+            <div class="coupon-footer">
+              <div class="input-coupon">
+                <input type="text" placeholder="Coupon Code">
+              </div>
+              <div class="btn-coupon">
+                <button>Apply Coupon</button>
+              </div>
+            </div>
+
+            <div class="cart-total">
+              <span class="title">Cart Total</span>
+              <div class="total borber-bot">
+                <span>Subtotal:</span>
+                <span>$1750</span>
+              </div>
+              <div class="total borber-bot">
+                <span>Shipping:</span>
+                <span>$1750</span>
+              </div>
+              <div class="total">
+                <span>Total:</span>
+                <span>$1750</span>
+              </div>
+              <div class="btn-checkout">
+                <button>Procees to checkout</button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
