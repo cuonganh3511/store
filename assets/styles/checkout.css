@@ -1,0 +1,203 @@
+:root {
+  --color-red: #db4444;
+  --color-red-hover: #e07575;
+  --color-green: #00ff66;
+  --color-green-hover: #a0bce0;
+  --color-bg: #000000;
+  --color-bg-input: #f5f5f5;
+}
+
+/* ==== header-checkout ====*/
+.header-checkout {
+	display: flex;
+	gap: 10px;
+}
+
+.header-checkout span, a {
+	color: gray;
+	text-decoration: none;
+}
+
+.header-checkout span:last-child {
+	color: #000000;
+}
+
+/* ==== main-checkout ==== */
+
+.main-checkout {}
+
+.main-checkout .title-main-checkout h1 {
+	font-size: 36px;
+	font-weight: 500;
+}
+
+/* === .content-main-checkout === */
+
+.content-main-checkout {
+	margin: 50px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.content-main-checkout .info-user {
+	width: 40%;
+	height: auto;
+}
+
+.content-main-checkout .info-user .input {
+	display: flex;
+	flex-direction: column;
+}
+
+.info-user .input label {
+	color: gray;
+}
+
+.info-user .input label span {
+	color: #e07575;
+}
+
+.info-user .input input {
+	border: none;
+	outline: none;
+	height: 50px;
+	padding: 24px;
+	background: #f5f5f5;
+}
+
+
+.info-user .checkbox-info {
+	display: flex;
+	align-items: center;
+}
+
+.info-user .checkbox-info input {
+	width: 24px;
+	height: 24px;
+	border-radius: 10px;
+	margin: 24px 5px;
+}
+
+/* === oder-product === */
+
+.oder-product {
+	width: 45%;
+	height: auto;
+	
+}
+/* === top-oder === */
+
+.oder-product .top-oder {
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+
+.top-oder .product .info-product {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.info-product .image-product {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.info-product .image-product .image {
+  width: 54px;
+}
+
+.info-product .image-product .image img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.total-product .title {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 16px 0;
+
+}
+
+.total-product .total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+
+.total-product .total:not(:last-child) {
+	border-bottom: 1px solid;
+}
+
+
+.pay-oder {}
+
+.pay-oder .bank-pay {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 16px;
+}
+
+.pay-oder .bank-pay .image {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.bank-pay .image div {
+	width: 42px;
+	height: 28px;
+	
+}
+
+.bank-pay .image div img {
+	object-fit: contain;
+}
+
+.pay-oder .input, .cash-pay {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.pay-oder input {
+	width: 24px;
+	height: 24px;
+	accent-color: black;
+}
+
+/* === bottom-oder === */
+.oder-product .bottom-oder {
+	margin: 32px 0;
+}
+
+.oder-product .bottom-oder .coupon-oder {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 32px;
+}
+
+.bottom-oder .coupon-oder input {
+	width: 300px;
+	height: 56px;
+	padding: 16px;
+	border: 1px solid gray;
+	border-radius: 4px;
+	outline: none;
+}
+
+.bottom-oder  button {
+	width: 210px;
+	height: 56px;
+	color: white;
+	background: var(--color-red);
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}

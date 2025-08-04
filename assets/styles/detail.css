@@ -139,21 +139,27 @@ img {
 	margin-right: 20px;
 }
 
+.colors-product .colors {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.colors-product .colors input {
+	width: 24px;
+	height: 24px;
+}
+
 .colors .btn-blue {
-	background: var(--color-green-hover);
+	accent-color: blue;
 
 }
 
 .colors .btn-red {
-	background: var(--color-red-hover);
+	accent-color: var(--color-red);
 } 
 
-.colors .border-btn {
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
-	border: none;
-}
+
 
 /* === sizes-product === */
 .sizes-product {
