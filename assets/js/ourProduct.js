@@ -1,3 +1,6 @@
+import { generateItem } from "./common.js";
+import { products } from "./mockData.js";
+
 const listProductourProduct = document.querySelector(
   ".all_product_our_product"
 );

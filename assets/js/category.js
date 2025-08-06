@@ -1,3 +1,6 @@
+import { generateItem } from "./common.js";
+import { products } from "./mockData.js";
+
 const listProductWhishlist = document.querySelector(".all_product_whislist");
 const whislist = products.filter((item) => item.isCategory);
 

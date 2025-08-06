@@ -1,3 +1,6 @@
+import { generateItem } from "./common.js";
+import { products } from "./mockData.js";
+
 const listProductFlashSale = document.querySelector(".all_product_flash_sale");
 const flashSale = products.filter((item) => item.isFlashSale).splice(0, 4);
 
