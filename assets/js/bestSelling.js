@@ -1,10 +1,12 @@
 import { generateItem } from "./common.js";
-import { products } from "./mockData.js";
+import { listProducts } from "./data.js";
 
 const listProductBestSelling = document.querySelector(
   ".all_product_best_selling"
 );
-const bestSelling = products.filter((item) => item.isBestSelling).splice(0, 4);
+const bestSelling = listProducts
+  .filter((item) => item.totalRating >= 4)
+  .splice(0, 4);
 
 bestSelling.forEach((item) => {
   const itemElement = document.createElement("div");
