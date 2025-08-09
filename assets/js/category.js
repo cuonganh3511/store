@@ -1,24 +1,15 @@
-import { generateItem } from "./common.js";
-import { products } from "./mockData.js";
+import { addProductToList } from "./common.js";
+import { listProducts } from "./data.js";
 
-const listProductWhishlist = document.querySelector(".all_product_whislist");
-const whislist = products.filter((item) => item.isCategory);
 
-whislist.forEach((item) => {
-  const itemElement = document.createElement("div");
-  itemElement.classList.add("product_sale");
-  itemElement.setAttribute("data-id", item.id);
-  itemElement.innerHTML = generateItem(item);
-  listProductWhishlist.appendChild(itemElement);
-});
+const listProductWishlist = document.querySelector(".all_product_whislist");
 
-const listProductJustForYou = document.querySelector(".all_product_jush_for_you");
-const justForYou = products.filter((item) => item.isJustForYou);
+listProducts.forEach((item) => addProductToList(listProductWishlist, item)
+)
 
-justForYou.forEach((item) => {
-  const itemElement = document.createElement("div");
-  itemElement.classList.add("product_sale");
-  itemElement.setAttribute("data-id", item.id);
-  itemElement.innerHTML = generateItem(item);
-  listProductJustForYou.appendChild(itemElement);
-});
+const listProductJusforyou = document.querySelector(".all_product_jush_for_you");
+const listJusforyou = listProducts.filter((item) => item.discount > 10);
+
+listJusforyou.forEach((item) => addProductToList(listProductJusforyou, item))
+
+

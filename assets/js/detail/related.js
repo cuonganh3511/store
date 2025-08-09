@@ -1,4 +1,4 @@
-import { generateItem } from "../common.js";
+import { addProductToList } from "../common.js";
 import { listProducts } from "../data.js";
 
 const searchParams = new URLSearchParams(window.location.search);
@@ -12,10 +12,4 @@ const relatedTitle = listProducts
   .sort(() => Math.random() - 0.5)  // trộn mảng ngẫu nhiên
   .splice(0, 4);
 
-relatedTitle.forEach((item) => {
-  const itemElement = document.createElement("div");
-  itemElement.classList.add("product_sale");
-  itemElement.setAttribute("data-id", item.id);
-  itemElement.innerHTML = generateItem(item);
-  listProductDetail.appendChild(itemElement);
-});
+relatedTitle.forEach((item) => addProductToList(listProductDetail, item));

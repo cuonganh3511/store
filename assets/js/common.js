@@ -1,6 +1,6 @@
 import * as ls from "./localStorage.js";
 
-export const generateItem = (product) => {
+const generateItem = (product) => {
   return `
     <div class="product">
       <div class="btn_product">
@@ -41,6 +41,14 @@ export const generateItem = (product) => {
     </div>
   `;
 };
+
+export const addProductToList = (listElement, item) => {
+  const itemElement = document.createElement("div");
+  itemElement.classList.add("product_sale");
+  itemElement.setAttribute("data-id", item.id);
+  itemElement.innerHTML = generateItem(item);
+  listElement.appendChild(itemElement);
+}
 
 // Hàm thêm sản phẩm vào giỏ hàng
 export function addToCart(productId) {
