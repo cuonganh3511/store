@@ -14,7 +14,7 @@ const generateItem = (product) => {
       </div>
       <img src="${product.image}" alt="" />
       <div class="link_product">
-        <button onclick="addToCart(${product.id})">Add To Cart</button>
+        <button onclick = "addToCart(${product.id})" >Add To Cart</button>
       </div>
     </div>
     
@@ -53,10 +53,10 @@ export const addProductToList = (listElement, item) => {
 // Hàm thêm sản phẩm vào giỏ hàng
 export function addToCart(productId) {
   // Lấy giỏ hàng hiện tại từ localStorage
-  let cart = ls.get("cart") || [];
+    let cart = ls.get("cart") || [];
 
-  // Tìm sản phẩm trong giỏ hàng
-  const existingItem = cart.find((item) => item.id === productId);
+    // Tìm sản phẩm trong giỏ hàng
+    const existingItem = cart.find((item) => item.id === productId);
 
   if (existingItem) {
     // Nếu sản phẩm đã có, tăng số lượng
@@ -82,14 +82,21 @@ export function addToCart(productId) {
 // Hàm cập nhật số lượng sản phẩm trong giỏ hàng trên UI
 export function updateCartCount() {
   const cart = ls.get("cart") || [];
-  const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
+  
+  // Đếm số sản phẩm khác nhau (mỗi item là 1 loại)
+  const totalItems = cart.length;
 
-  // Cập nhật badge số lượng giỏ hàng (nếu có element)
   const cartBadge = document.querySelector(".cart-count");
   if (cartBadge) {
     cartBadge.textContent = totalItems;
   }
+  console.log(cart);
 }
 
 window.addToCart = addToCart;
 window.updateCartCount = updateCartCount;
+
+document.addEventListener("DOMContentLoaded", () => {
+  updateCartCount();
+});
+

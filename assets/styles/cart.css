@@ -80,6 +80,13 @@
   gap: 10px;
 }
 
+.quantity-product .border-quantity .inputNumber {
+  width: 100%;
+  padding: 0 16px;
+  border: none;
+  outline: none;
+}
+
 .product .quantity-product .icon {
   display: flex;
   flex-direction: column;
