@@ -102,6 +102,7 @@
   align-items: center;
 }
 
+
 .main-cart .btn-main button {
   width: 218px;
   height: 56px;
@@ -111,6 +112,11 @@
   border: 1px solid gray;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.btn-main button a {
+  text-decoration: none;
+  color: #000000;
 }
 
 /* ==== footer-cart ==== */
@@ -185,3 +191,8 @@
   text-align: center;
 }
 
+.cart-total .btn-checkout a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}

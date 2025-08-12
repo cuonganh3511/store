@@ -27,7 +27,7 @@ const templateCart = (product) => {
 			</div>
 
 			<div class="sub-product width-25">
-			<span>$650</span>
+			<span>${product.price}</span>
 			</div>
 	`
 }
@@ -46,5 +46,22 @@ products.forEach(element => {
 	addProductToCart(listElement, element)
 });
 
-const inputNumber = document.getElementById("inputNumber");
-console.log(inputNumber);
+listElement.addEventListener("input", (e) => {
+	if(e.target.classList.contains("inputNumber")) {
+		const productElement = e.target.closest(".product");
+		const id = Number(productElement.getAttribute("data-id"));
+		const quantity = Math.max(1, Number(e.target.value));
+
+		const productData = products.find((e) => e.id === id);
+		const subProduct = productElement.querySelector(".sub-product span");
+		subProduct.textContent = productData.price * quantity;
+
+		// cap nhat tren local storage
+		const cart = ls.get("cart")
+		const cartItem = cart.find((e) => e.id === id)
+		if(cartItem) {
+			cartItem.quantity = quantity;
+			ls.set("cart", cart)
+		}
+	}
+})
