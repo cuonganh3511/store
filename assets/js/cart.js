@@ -17,7 +17,7 @@ const templateCart = (product) => {
 			</div>
 
 			<div class="price-product width-25">
-			<span>${product.price}</span>
+			<span>${(product.price).toLocaleString()}</span>
 			</div>
 
 			<div class="quantity-product width-25">
@@ -27,7 +27,7 @@ const templateCart = (product) => {
 			</div>
 
 			<div class="sub-product width-25">
-			<span>${product.price}</span>
+			<span>${(product.price).toLocaleString()}</span>
 			</div>
 	`
 }
@@ -54,7 +54,7 @@ listElement.addEventListener("input", (e) => {
 
 		const productData = products.find((e) => e.id === id);
 		const subProduct = productElement.querySelector(".sub-product span");
-		subProduct.textContent = productData.price * quantity;
+		subProduct.textContent = (productData.price * quantity).toLocaleString();
 
 		// cap nhat tren local storage
 		const cart = ls.get("cart")

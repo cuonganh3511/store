@@ -23,8 +23,8 @@ const generateItem = (product) => {
         <a href="/page/detail.html?id=${product.id}">${product.name}</a>
       </div>
       <div class="info_price">
-        <span class="pri_1">$${product.price}</span>
-        <span class="pri_2">$${product.oldPrice}</span>
+        <span class="pri_1">$${(product.price).toLocaleString()}</span>
+        <span class="pri_2">$${(product.oldPrice).toLocaleString()}</span>
       </div>
       <div class="info_evaluate">
         <div class="evaluate">
