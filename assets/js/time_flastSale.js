@@ -27,6 +27,6 @@ function updateCountdown() {
   document.getElementById("seconds").textContent = String(seconds).padStart(2, "0");
 }
 
-// Cập nhật mỗi giây
+// Cập nhật fuction updateCountdown
 const timerInterval = setInterval(updateCountdown, 1000);
-updateCountdown(); // Chạy ngay khi load
+updateCountdown(); 
