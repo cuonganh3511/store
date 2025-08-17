@@ -1,20 +1,27 @@
 import * as ls from "./localStorage.js";
 import { listProducts } from "./data.js";
+import { updateCartCount } from "./common.js";
 
 const listElement = document.querySelector(".body-main");
 let subTotal = document.querySelectorAll(".subTotal")
+const remove = document.getElementById("remove")
 
-const cart = ls.get("cart")
-const products = cart.map(item => {
-	const product = listProducts.find(e => e.id === item.id)
-	return { ...item, ...product }
-})
+const getProducts = () => {
+	const cart = ls.get("cart")
+	const products = cart.map(item => {
+		const product = listProducts.find(e => e.id === item.id)
+		return { ...item, ...product }
+	})
+	return products;
+}
+
 const templateCart = (product) => {
 	return `
 			<div class="image-product width-25">
-			<span class="image"
-				><img src="${product.image}" alt=""
-			/></span>
+			<span class="image">
+			<img src="${product.image}" alt=""/>
+			<span class="remove" data-id="${product.id}" >x</span>
+			</span>
 			<span class="name">${product.name}</span>
 			</div>
 
@@ -34,18 +41,22 @@ const templateCart = (product) => {
 	`
 }
 
-const addProductToCart = (listElement, item) => {
-	const itemElement = document.createElement("div"); // tuong ung voi file html la thẻ div.product
-	itemElement.classList.add("product");
-	itemElement.setAttribute("data-id", item.id);
-	itemElement.innerHTML = templateCart(item);
-	listElement.appendChild(itemElement);
+const initCart = () => {
+	const products = getProducts();
+	const addProductToCart = (listElement, item) => {
+		const itemElement = document.createElement("div"); // tuong ung voi file html la thẻ div.product
+		itemElement.classList.add("product");
+		itemElement.setAttribute("data-id", item.id);
+		itemElement.innerHTML = templateCart(item);
+		listElement.appendChild(itemElement);
+	}
+
+
+	products.forEach(element => {
+		addProductToCart(listElement, element)
+	});
 }
-
-
-products.forEach(element => {
-	addProductToCart(listElement, element)
-});
+initCart();
 
 listElement.addEventListener("input", (e) => {
 	if (e.target.classList.contains("inputNumber")) {
@@ -53,6 +64,7 @@ listElement.addEventListener("input", (e) => {
 		const id = Number(productElement.getAttribute("data-id"));
 		const quantity = Math.max(1, Number(e.target.value));
 
+		const products = getProducts();
 		const productData = products.find((e) => e.id === id);
 		const subProduct = productElement.querySelector(".sub-product span");
 		subProduct.textContent = (productData.price * quantity).toLocaleString();
@@ -64,33 +76,59 @@ listElement.addEventListener("input", (e) => {
 			cartItem.quantity = quantity;
 			ls.set("cart", cart)
 			pushTotal();
+			updateCartCount();
 		}
 	}
 })
 
+// Hàm xoá product
+const removeProduct = (id) => {
+	// lấy cart hiện tại
+	let cart = ls.get("cart") || [];
+
+	// lọc bỏ item bị xoá
+	cart = cart.filter(item => item.id !== id);
+
+	// lưu lại vào localStorage
+	ls.set("cart", cart);
+
+	// xoá sản phẩm khỏi DOM
+	const productElement = listElement.querySelector(`.product[data-id="${id}"]`);
+	if (productElement) {
+		productElement.remove();
+	}
+
+	pushTotal();
+	updateCartCount();
+}
+
+// Event xoá sản phẩm
+listElement.addEventListener("click", (e) => {
+	if (e.target.classList.contains("remove")) {
+		const id = Number(e.target.dataset.id);
+		removeProduct(id);
+	}
+});
+
+
+
 function pushTotal() {
-	// check xem trong cart co product kh
-	// neu co lay ra price * quantity
-	// lap tat ca product => reduce de cong total
-	// in ra html
+	const products = getProducts();
 
 	if (products.length !== 0) {
-		let price = products.map((element) => {
+		let getPrice = products.map((element) => {
 			let tong = element.price * element.quantity;
 			return tong;
 		}).reduce((x, y) => x + y, 0).toLocaleString();
-		console.log(price);
 
 		// lap qua tung phan tu subTotal -> in ra
 		subTotal.forEach((el) => {
-			el.textContent = price;
+			el.textContent = getPrice;
 		})
 
-		localStorage.setItem("cart", JSON.stringify(cart))
 	} else return;
 }
 pushTotal();
-
 
 
 

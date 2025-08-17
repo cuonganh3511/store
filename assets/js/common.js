@@ -96,7 +96,5 @@ export function updateCartCount() {
 window.addToCart = addToCart;
 window.updateCartCount = updateCartCount;
 
-document.addEventListener("DOMContentLoaded", () => {
-  updateCartCount();
-});
+window.addEventListener("load", updateCartCount)
 
