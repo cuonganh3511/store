@@ -95,7 +95,7 @@
 }
 
 
-.top-oder .product .info-product {
+.top-oder .products .info-product {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -108,12 +108,20 @@
 }
 
 .info-product .image-product .image {
-  width: 54px;
+  width: 25%;
 }
 
 .info-product .image-product .image img {
   width: 100%;
   object-fit: contain;
+}
+
+.info-product .image-product .name {
+	width: 60%;
+	display: -webkit-box;          /* cần cho Chrome/Safari/Edge cũ */
+  	-webkit-box-orient: vertical;
+  	-webkit-line-clamp: 2;         /* số dòng muốn giữ */
+ 	overflow: hidden;
 }
 
 .total-product .title {

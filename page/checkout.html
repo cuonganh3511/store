@@ -20,9 +20,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="stylesheet" href="/assets/styles/main.css" />
     <!-- js -->
-    <script src="/assets/js/mockData.js"></script>
-    <script src="/assets/js/common.js"></script>
-    <script src="/assets/js/layout.js"></script>
+    <script type="module" src="/assets/js/common.js"></script>
+    <script type="module" src="/assets/js/layout.js"></script>
+    <script type="module" src="/assets/js/checkOut.js"></script>
   </head>
   <body>
     <main class="wrapper my-80">
@@ -81,7 +81,7 @@
                 </div>
                 <div class="input">
                   <label for="fname">Email Address<span>*</span></label>
-                  <input type="text" />
+                  <input type="email" />
                 </div>
 
                 <div class="checkbox-info">
@@ -95,8 +95,9 @@
 
             <div class="oder-product">
               <div class="top-oder">
-                <div class="product">
-                  <div class="info-product">
+                <div class="products">
+
+                  <!-- <div class="info-product">
                     <div class="image-product">
                       <span class="image">
                         <img src="/assets/img/Monitor-Cart-Small.png" alt="" />
@@ -106,25 +107,15 @@
                     <div class="price-product">
                       <span>$650</span>
                     </div>
-                  </div>
-                  <div class="info-product">
-                    <div class="image-product">
-                      <span class="image">
-                        <img src="/assets/img/Monitor-Cart-Small.png" alt="" />
-                      </span>
-                      <span class="name">LCD Monitor</span>
-                    </div>
-                    <div class="price-product">
-                      <span>$650</span>
-                    </div>
-                  </div>
+                  </div> -->
+                  
                 </div>
 
                 <div class="total-product">
                   <span class="title">Cart Total</span>
                   <div class="total">
                     <span>Subtotal:</span>
-                    <span>$1300</span>
+                    <span class ="subTotal">$1300</span>
                   </div>
                   <div class="total">
                     <span>Shipping:</span>
@@ -132,7 +123,7 @@
                   </div>
                   <div class="total">
                     <span>Total:</span>
-                    <span>$1300</span>
+                    <span class ="subTotal">$1300</span>
                   </div>
                 </div>
 

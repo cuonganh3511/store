@@ -112,7 +112,7 @@ listElement.addEventListener("click", (e) => {
 
 
 
-function pushTotal() {
+export function pushTotal() {
 	const products = getProducts();
 
 	if (products.length !== 0) {
