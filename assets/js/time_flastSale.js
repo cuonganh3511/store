@@ -1,5 +1,5 @@
 const saleEndTime = new Date();
-saleEndTime.setHours(21, 59, 59, 999); // Hết hạn vào 23:59:59 hôm nay
+saleEndTime.setHours(22, 59, 59, 999); // Hết hạn vào 23:59:59 hôm nay
 
 function updateCountdown() {
   const now = new Date().getTime();

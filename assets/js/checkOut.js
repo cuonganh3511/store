@@ -4,8 +4,9 @@ import { updateCartCount } from "./common.js";
 
 
 const listElement = document.querySelector(".products");
-const listSubTotal = document.querySelectorAll(".subTotal")
+const listSubTotal = document.querySelectorAll(".subTotal") // lấy ra tất 2 class subTotal
 
+// lay san pham tu local => loc ra lay thong tin cac don hang
 const getProducts = () => {
 	const cart = ls.get("cart")
 	const products = cart.map(item => {
@@ -15,6 +16,8 @@ const getProducts = () => {
 	return products;
 }
 
+
+// tao template html de in ra gia tri san pham
 const templateCheckOut = (product) => {
 	return `
 		<div class="info-product">
@@ -31,6 +34,7 @@ const templateCheckOut = (product) => {
 	`;
 }
 
+// khoi tao
 const initCartCheckOut = () => {
 	const products = getProducts();
 	const addProductToCheckOut = (listElement, item) => {
@@ -48,6 +52,7 @@ const initCartCheckOut = () => {
 }
 initCartCheckOut();
 
+// Hàm push total vào phần hiển thị và tính tiền 
 const pushTotalCheckOut = () => {
 	// lấy dữ liệu productsproducts
 	const products = getProducts();
@@ -67,6 +72,8 @@ const pushTotalCheckOut = () => {
 }
 
 updateCartCount();
+
+// Khi trang web vừa load xong phần HTML, sẽ tự động gọi hàm pushTotalCheckOut() để xử lý
 document.addEventListener("DOMContentLoaded", () => {
   pushTotalCheckOut();
 });
