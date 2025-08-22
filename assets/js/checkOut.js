@@ -71,9 +71,72 @@ const pushTotalCheckOut = () => {
 	}else return;
 }
 
-updateCartCount();
 
 // Khi trang web vừa load xong phần HTML, sẽ tự động gọi hàm pushTotalCheckOut() để xử lý
 document.addEventListener("DOMContentLoaded", () => {
   pushTotalCheckOut();
 });
+
+
+// =================
+
+
+// Lấy nút btnbtn
+const btnOrder = document.querySelector("#submit");
+
+// add sự kiện click cho btn
+btnOrder.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  // Lấy thông tin khách hàng từ thẻ input
+  const customer = {
+    name: document.getElementById("name").value,
+    nameCompany: document.getElementById("nameCompany").value,
+    address: document.getElementById("address").value,
+    optional: document.getElementById("optional").value,
+    town: document.getElementById("town").value,
+    phoneNumber: document.getElementById("phoneNumber").value,
+    email: document.getElementById("email").value,
+  };
+
+  // Lấy phương thức thanh toán
+  let aboutPay = "bank"; // mặc định
+  const cashPay = document.getElementById("cashPay");
+  if (cashPay.checked) {
+    aboutPay = "cash";
+  }
+
+  // Lấy thông tin sản phẩm từ local
+  const products = getProducts();
+  const infoProducts = products.map((item) => ({
+    id: item.id,
+    name: item.name,
+    category: item.category,
+    price: item.price,
+    quantity: item.quantity,
+  }));
+
+  // Tạo object đơn hàng
+  const order = {
+    id: Date.now(), // id đơn hàng
+    customer,
+    aboutPay,
+    products: infoProducts,
+    createdAt: new Date().toISOString(),
+  };
+
+  // Lấy danh sách đơn hàng cũ trong local
+  let orders = JSON.parse(localStorage.getItem("orders")) || [];
+  orders.push(order);
+
+  // Lưu lại
+  localStorage.setItem("orders", JSON.stringify(orders));
+
+  alert("Cảm ơn bạn đã đặt hàng!");
+
+  // Reset form
+  form.reset();
+
+});
+
+updateCartCount();

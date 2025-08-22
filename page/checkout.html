@@ -54,34 +54,34 @@
 
           <div class="content-main-checkout">
             <div class="info-user">
-              <form action="">
+              <form action="" id="checkOutForm">
                 <div class="input">
                   <label for="fname">First Name <span>*</span></label>
-                  <input type="text" />
+                  <input type="text" id="name"/>
                 </div>
                 <div class="input">
                   <label for="fname">Company Name</label>
-                  <input type="text" />
+                  <input type="text" id="nameCompany"/>
                 </div>
                 <div class="input">
                   <label for="fname">Street Address<span>*</span></label>
-                  <input type="text" />
+                  <input type="text" id="address"/>
                 </div>
                 <div class="input">
                   <label for="fname">Apartment, floor, etc. (optional)</label>
-                  <input type="text" />
+                  <input type="text" id="optional"/>
                 </div>
                 <div class="input">
                   <label for="fname">Town/City<span>*</span></label>
-                  <input type="text" />
+                  <input type="text" id="town"/>
                 </div>
                 <div class="input">
                   <label for="fname">Phone Number<span>*</span></label>
-                  <input type="text" />
+                  <input type="text" id="phoneNumber"/>
                 </div>
                 <div class="input">
                   <label for="fname">Email Address<span>*</span></label>
-                  <input type="email" />
+                  <input type="email" id="email"/>
                 </div>
 
                 <div class="checkbox-info">
@@ -150,7 +150,7 @@
                   </div>
 
                   <div class="cash-pay">
-                    <input type="radio" name="pay"/>
+                    <input type="radio" name="pay" id="cashPay" value="cash"/>
                     <label for="bank">Cash on delivery</label>
                   </div>
                 </div>
@@ -162,7 +162,7 @@
                   <button>Apply Coupon</button>
                 </div>
 
-                <div class="place-oder">
+                <div class="place-oder" id="submit">
                   <button>Place Order</button>
                 </div>
               </div>
