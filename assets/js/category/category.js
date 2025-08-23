@@ -11,7 +11,7 @@ const listJusforyou = listProducts.filter((item) => item.discount > 10);
 listJusforyou.forEach((item) => addProductToList(listProductJusforyou, item))
 
 
-//  window.location.search : “phân tích” chuỗi query thành cặp key = value. => category = phone,laptop..
+//  window.location.search :phân tích chuỗi query thành cặp key = value. => category = phone,laptop..
 const params = new URLSearchParams(window.location.search);
 const category = params.get("category"); // lấy giá trị đằng sau category = phone,laptop..
 
@@ -23,3 +23,7 @@ const findProductWidthParams = (valueFind) => {
 		})
 }
 findProductWidthParams(category);
+
+
+// const listWishlist = listProducts.filter((item) => item.discount);
+// listWishlist.forEach((item) => addProductToList(listProductWishlist, item))

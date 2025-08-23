@@ -351,5 +351,77 @@ export const listProducts = [
     screenTech: ["IPS 120Hz", "2K FullView Display"],
     ram: ["6GB", "8GB"],
     description: "Snapdragon 7 Gen 1/6GB/128GB/11.5 inch 120Hz/4G LTE"
-  }
+  },
+  {
+	id: 17,
+	name: "Apple Watch Series 9 GPS 41mm",
+	category: "watch",
+	price: 10990000,
+	oldPrice: 11990000,
+	totalRating: 5,
+	review: 18,
+	discount: 8,
+	image: "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/a/p/apple-watch-s9-41mm.jpg",
+	gallery: [
+		"https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/a/p/apple-watch-s9-41mm-1.jpg",
+		"https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/a/p/apple-watch-s9-41mm-2.jpg"
+	],
+	color: ["black", "pink", "silver"],
+	size: "41mm",
+	description: "Màn hình: Retina LTPO OLED, độ sáng 2000 nits, chip S9 SiP, chống nước WR50, hỗ trợ đo nồng độ oxy, đo nhịp tim, theo dõi giấc ngủ."
+},
+{
+	id: 18,
+	name: "Sony Alpha ZV-E10 Mirrorless",
+	category: "camera",
+	price: 18990000,
+	oldPrice: 19990000,
+	totalRating: 4,
+	review: 9,
+	discount: 5,
+	image: "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://product.hstatic.net/1000230347/product/sony-zv-e10.jpg",
+	gallery: [
+		"https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://product.hstatic.net/1000230347/product/sony-zv-e10-1.jpg",
+		"https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://product.hstatic.net/1000230347/product/sony-zv-e10-2.jpg"
+	],
+	color: ["black", "white"],
+	size: "APS-C Sensor",
+	description: "Cảm biến APS-C 24.2MP, quay 4K 30fps, màn hình lật 180°, hỗ trợ livestream, mic định hướng 3-capsule, Eye AF."
+},
+{
+	id: 19,
+	name: "Sony WH-1000XM5 Wireless Headphones",
+	category: "headphone",
+	price: 8990000,
+	oldPrice: 9490000,
+	totalRating: 5,
+	review: 22,
+	discount: 6,
+	image: "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://sony.com.vn/image/wh-1000xm5.jpg",
+	gallery: [
+		"https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://sony.com.vn/image/wh-1000xm5-black.jpg",
+		"https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://sony.com.vn/image/wh-1000xm5-silver.jpg"
+	],
+	color: ["black", "silver"],
+	size: "Over-Ear",
+	description: "Tai nghe chống ồn chủ động, pin 30h, sạc nhanh 3 phút nghe 3 giờ, hỗ trợ LDAC, kết nối Bluetooth 5.2, trợ lý giọng nói."
+},
+{
+	id: 20,
+	name: "PlayStation 5 Slim Digital Edition",
+	category: "gamepad",
+	price: 14990000,
+	oldPrice: 15990000,
+	totalRating: 5,
+	review: 35,
+	discount: 6,
+	image: "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cdn.tgdd.vn/Products/Images/9499/303788/playstation-5-slim.jpg",
+	gallery: [
+		"https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cdn.tgdd.vn/Products/Images/9499/303788/playstation-5-slim-1.jpg",
+		"https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cdn.tgdd.vn/Products/Images/9499/303788/playstation-5-slim-2.jpg"
+	],
+	color: ["white", "black"],
+	size: "8K, 120Hz, SSD 1TB",
+	description: "Hỗ trợ độ phân giải 8K, tốc độ khung hình 120Hz, SSD tốc độ cao 1TB, công nghệ Ray Tracing, DualSense controller mới."
+}
 ]
