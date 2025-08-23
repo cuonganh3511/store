@@ -226,7 +226,7 @@ img {
 	background: none;
 }
 
-.select ul .change {
+.select ul .change button {
 	cursor: pointer;
 }
 

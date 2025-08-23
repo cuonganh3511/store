@@ -36,7 +36,7 @@ const templateCart = (product) => {
 			</div>
 
 			<div class="sub-product width-25">
-			<span>${(product.price).toLocaleString()}</span>
+			<span>${(product.price * product.quantity).toLocaleString()}</span>
 			</div>
 	`
 }
