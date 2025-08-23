@@ -361,10 +361,10 @@ export const listProducts = [
 	totalRating: 5,
 	review: 18,
 	discount: 8,
-	image: "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/a/p/apple-watch-s9-41mm.jpg",
+	image: "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/a/p/apple-watch-series-10-42mm_1_.png",
 	gallery: [
-		"https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/a/p/apple-watch-s9-41mm-1.jpg",
-		"https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/a/p/apple-watch-s9-41mm-2.jpg"
+		"https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/a/p/apple-watch-series-10-42mm_8_.png",
+		"https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/a/p/apple-watch-series-10-42mm_2_.png"
 	],
 	color: ["black", "pink", "silver"],
 	size: "41mm",
@@ -379,10 +379,10 @@ export const listProducts = [
 	totalRating: 4,
 	review: 9,
 	discount: 5,
-	image: "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://product.hstatic.net/1000230347/product/sony-zv-e10.jpg",
+	image: "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/m/a/may-quay-chong-rung-dji-osmo-pocket-3-advanced-4k_2.png",
 	gallery: [
-		"https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://product.hstatic.net/1000230347/product/sony-zv-e10-1.jpg",
-		"https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://product.hstatic.net/1000230347/product/sony-zv-e10-2.jpg"
+		"https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/m/a/may-quay-chong-rung-dji-osmo-pocket-3-advanced-4k.png",
+		"https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/m/a/may-quay-chong-rung-dji-osmo-pocket-3-advanced-4k-ksp_8_.png"
 	],
 	color: ["black", "white"],
 	size: "APS-C Sensor",
@@ -397,10 +397,10 @@ export const listProducts = [
 	totalRating: 5,
 	review: 22,
 	discount: 6,
-	image: "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://sony.com.vn/image/wh-1000xm5.jpg",
+	image: "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/1/_/1_13_32.jpg",
 	gallery: [
-		"https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://sony.com.vn/image/wh-1000xm5-black.jpg",
-		"https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://sony.com.vn/image/wh-1000xm5-silver.jpg"
+		"https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/3/_/3_12_27.jpg",
+		"https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/4/_/4_8_29.jpg"
 	],
 	color: ["black", "silver"],
 	size: "Over-Ear",
@@ -415,10 +415,10 @@ export const listProducts = [
 	totalRating: 5,
 	review: 35,
 	discount: 6,
-	image: "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cdn.tgdd.vn/Products/Images/9499/303788/playstation-5-slim.jpg",
+	image: "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/a/taycam.jpg",
 	gallery: [
-		"https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cdn.tgdd.vn/Products/Images/9499/303788/playstation-5-slim-1.jpg",
-		"https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cdn.tgdd.vn/Products/Images/9499/303788/playstation-5-slim-2.jpg"
+		"https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/a/taycam.jpg",
+		"https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/a/taycam.jpg"
 	],
 	color: ["white", "black"],
 	size: "8K, 120Hz, SSD 1TB",
